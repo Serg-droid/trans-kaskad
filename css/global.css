@@ -1,0 +1,102 @@
+body {
+	color: white;
+	/* Фоновая заставка */
+	background-color: rgb(2,0,8);
+	background-image: url('../img/fon.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+
+header h1 {
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	max-width: 1440px;
+
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.contacts {
+	/* Фиксируем позицию вверху-справа, контакт движется со страницей */ 
+	position: fixed;
+	top: 5px;
+	right: 8px;
+	padding-left: 10px;
+	border-left: 3px red solid;
+	background-color: rgba(115,32,20,1)
+}
+
+pre {
+	padding: 0;
+	margin: 0;
+}
+
+.space-block {
+	height: 525px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav li {
+	list-style-type: none;
+    padding-left: 6px;
+    border-left: 2px solid red;
+	padding-right: 8px;
+	border-radius: 2px;
+	font-size: 20px;
+	margin: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+nav li:hover {
+	background-color: red;
+}
+
+@media screen and (max-width: 800px) {
+nav ul {
+    flex-direction: column;
+    align-self: center;
+  }
+nav ul li {
+	font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+  }
+
+.contacts {
+	font-size: 16px;
+  }
+}
+
+.white-space {
+	background-color: #fff;
+	height: 8px;
+}
+
+footer {
+	height: 30px;
+	background-color: black;
+	text-align: center;
+	color: white;
+	padding-top: 15px;
+	font-weight: bold;
+	font-size: 18px;
+}
